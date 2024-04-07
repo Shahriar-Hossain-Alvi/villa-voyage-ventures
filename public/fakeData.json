@@ -1,0 +1,206 @@
+[
+    {
+        "id": 1,
+        "image_link": "hotel_image_1.jpg",
+        "estate_title": "Luxury Beachfront Hotel",
+        "segment_name": "Hotels",
+        "short_description": "Experience luxury and relaxation at this beachfront hotel.",
+        "detailed_description": "Indulge in world-class amenities, fine dining, and stunning ocean views at this luxury hotel.",
+        "price": "$500/night",
+        "status": "rent",
+        "area": "400 sq ft",
+        "location": "Beach Paradise, Maldives",
+        "facilities": [
+            "ocean view",
+            "swimming pool",
+            "restaurant"
+        ]
+    },
+    {
+        "id": 2,
+        "image_link": "motel_image_1.jpg",
+        "estate_title": "Cozy Roadside Motel",
+        "segment_name": "Motels",
+        "short_description": "Convenient and comfortable lodging for travelers on the go.",
+        "detailed_description": "Rest easy in this cozy motel offering clean rooms, free breakfast, and easy access to the highway.",
+        "price": "$80/night",
+        "status": "rent",
+        "area": "250 sq ft",
+        "location": "Highway Junction, Texas",
+        "facilities": [
+            "free breakfast",
+            "parking",
+            "wifi"
+        ]
+    },
+    {
+        "id": 3,
+        "image_link": "resort_image_1.jpg",
+        "estate_title": "Tropical Resort Getaway",
+        "segment_name": "Resorts",
+        "short_description": "Escape to paradise at this luxurious tropical resort.",
+        "detailed_description": "Relax in style with private villas, gourmet dining, and endless recreational activities at this tropical resort.",
+        "price": "$1000/night",
+        "status": "rent",
+        "area": "1000 sq ft",
+        "location": "Island Oasis, Fiji",
+        "facilities": [
+            "private villa",
+            "beach access",
+            "spa"
+        ]
+    },
+    {
+        "id": 4,
+        "image_link": "vacation_rental_image_1.jpg",
+        "estate_title": "Scenic Mountain Cabin",
+        "segment_name": "Vacation rentals",
+        "short_description": "Experience the beauty of nature in this cozy mountain cabin.",
+        "detailed_description": "Unwind in this charming cabin with panoramic mountain views, a fireplace, and nearby hiking trails.",
+        "price": "$200/night",
+        "status": "rent",
+        "area": "800 sq ft",
+        "location": "Mountain Retreat, Colorado",
+        "facilities": [
+            "fireplace",
+            "mountain view",
+            "hiking trails"
+        ]
+    },
+    {
+        "id": 5,
+        "image_link": "lodge_image_1.jpg",
+        "estate_title": "Rustic Forest Lodge",
+        "segment_name": "Lodges",
+        "short_description": "Immerse yourself in nature at this rustic forest lodge.",
+        "detailed_description": "Experience tranquility and adventure with cozy cabins, wildlife tours, and campfire evenings at this forest lodge.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "1200 sq ft",
+        "location": "Woodland Haven, Oregon",
+        "facilities": [
+            "cabin accommodation",
+            "wildlife tours",
+            "campfire area"
+        ]
+    },
+    {
+        "id": 6,
+        "image_link": "guesthouse_image_1.jpg",
+        "estate_title": "Charming Countryside Guesthouse",
+        "segment_name": "Guesthouses",
+        "short_description": "Experience genuine hospitality at this charming countryside guesthouse.",
+        "detailed_description": "Enjoy cozy rooms, home-cooked meals, and personalized service in a tranquil rural setting at this guesthouse.",
+        "price": "$150/night",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "Country Retreat, England",
+        "facilities": [
+            "homemade meals",
+            "garden",
+            "personalized service"
+        ]
+    },
+    {
+        "id": 7,
+        "image_link": "hotel_image_2.jpg",
+        "estate_title": "City Center Boutique Hotel",
+        "segment_name": "Hotels",
+        "short_description": "Discover urban sophistication at this boutique hotel in the heart of the city.",
+        "detailed_description": "Immerse yourself in culture and luxury with stylish rooms, gourmet dining, and vibrant nightlife just steps away.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "500 sq ft",
+        "location": "Cityscape Plaza, New York",
+        "facilities": [
+            "city view",
+            "restaurant",
+            "bar"
+        ]
+    },
+    {
+        "id": 8,
+        "image_link": "resort_image_2.jpg",
+        "estate_title": "Ski Resort Retreat",
+        "segment_name": "Resorts",
+        "short_description": "Experience winter wonderland at this ski resort nestled in the mountains.",
+        "detailed_description": "Enjoy ski-in/ski-out accommodations, après-ski activities, and breathtaking alpine views at this resort.",
+        "price": "$600/night",
+        "status": "rent",
+        "area": "800 sq ft",
+        "location": "Alpine Valley, Switzerland",
+        "facilities": [
+            "ski-in/ski-out",
+            "spa",
+            "après-ski activities"
+        ]
+    },
+    {
+        "id": 9,
+        "image_link": "guesthouse_image_2.jpg",
+        "estate_title": "Seaside Bed and Breakfast",
+        "segment_name": "Guesthouses",
+        "short_description": "Experience coastal charm at this quaint seaside bed and breakfast.",
+        "detailed_description": "Wake up to ocean views, homemade breakfast, and warm hospitality at this seaside retreat.",
+        "price": "$120/night",
+        "status": "rent",
+        "area": "400 sq ft",
+        "location": "Coastal Haven, Maine",
+        "facilities": [
+            "ocean view",
+            "homemade breakfast",
+            "beach access"
+        ]
+    },
+    {
+        "id": 10,
+        "image_link": "resort_image_3.jpg",
+        "estate_title": "Luxury Island Resort",
+        "segment_name": "Resorts",
+        "short_description": "Own a piece of paradise at this luxury island resort.",
+        "detailed_description": "Invest in luxury and relaxation with private villas, pristine beaches, and world-class amenities at this exclusive island resort.",
+        "price": "$10,000,000",
+        "status": "sale",
+        "area": "10 acres",
+        "location": "Exotic Island, Caribbean",
+        "facilities": [
+            "private villa",
+            "beachfront",
+            "spa"
+        ]
+    },
+    {
+        "id": 11,
+        "image_link": "hotel_image_3.jpg",
+        "estate_title": "Historic Downtown Hotel",
+        "segment_name": "Hotels",
+        "short_description": "Own a piece of history with this historic downtown hotel.",
+        "detailed_description": "Invest in a landmark property with elegant architecture, refined accommodations, and a prime location in the heart of the city.",
+        "price": "$5,500,000",
+        "status": "sale",
+        "area": "50,000 sq ft",
+        "location": "Downtown Heritage District, Paris",
+        "facilities": [
+            "ballroom",
+            "restaurant",
+            "business center"
+        ]
+    },
+    {
+        "id": 12,
+        "image_link": "vacation_rental_image_2.jpg",
+        "estate_title": "Secluded Mountain Chalet",
+        "segment_name": "Vacation rentals",
+        "short_description": "Own your mountain retreat with this secluded chalet.",
+        "detailed_description": "Invest in serenity and adventure with a cozy chalet nestled in the mountains, offering breathtaking views and access to outdoor activities.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "Alpine Haven, Colorado",
+        "facilities": [
+            "mountain view",
+            "fireplace",
+            "hot tub"
+        ]
+    }
+]
