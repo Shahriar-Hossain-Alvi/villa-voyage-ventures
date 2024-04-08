@@ -5,11 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      playfairDisplay: ['Playfair Display', 'sans-serif'],
-      dosis: ['Dosis', 'serif'],
-    },
     extend: {
+      fontFamily: {
+        playfairDisplay: ['Playfair Display', 'sans-serif'],
+        dosis: ['Dosis', 'serif'],
+      },
       colors: {
         primaryColor: '#77C720 ',
         secondaryColor: '#334149'

@@ -3,6 +3,8 @@ import Root from "../Layouts/Root";
 import Home from "../Pages/Home";
 import UpdateProfile from "../Pages/Profile/UpdateProfile";
 import UserProfile from "../Pages/Profile/UserProfile";
+import Login from "../Pages/Profile/Login";
+import Register from "../Pages/Profile/Register";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +14,14 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/register",
+                element: <Register></Register>
             },
             {
                 path: "/userprofile",
