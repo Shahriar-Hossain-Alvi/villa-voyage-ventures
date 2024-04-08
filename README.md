@@ -11,6 +11,7 @@ Welcome to Villa Voyage Ventures, your premier destination for luxury resort exp
 - **Animate CSS**
 - **React Leaflet**
 - **React Icons**
+- **PropTypes**
 
 ## Features
 
