@@ -9,7 +9,12 @@ export default {
       playfairDisplay: ['Playfair Display', 'sans-serif'],
       dosis: ['Dosis', 'serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primaryColor: '#77C720 ',
+        secondaryColor: '#334149'
+      },
+    },
   },
   plugins: [require("daisyui")],
 }
