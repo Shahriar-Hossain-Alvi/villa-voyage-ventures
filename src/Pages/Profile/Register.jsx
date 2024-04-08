@@ -2,12 +2,14 @@ import Navbar from "../Shared/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
+    const [showPassword, setShowPassword] = useState(false);
 
     const { createUser } = useContext(AuthContext);
 
@@ -21,15 +23,15 @@ const Register = () => {
         const password = form.get('password');
 
         //password validation
-        if(password.length < 6){
+        if (password.length < 6) {
             toast.error('Password should be at least 6 character');
             return;
         }
-        else if(!/[A-Z]/.test(password)){
+        else if (!/[A-Z]/.test(password)) {
             toast.error('Password should contain at least 1 uppercase character');
             return;
         }
-        else if(!/[a-z]/.test(password)){
+        else if (!/[a-z]/.test(password)) {
             toast.error('Password should contain at least 1 lowercase character');
             return;
         }
@@ -53,12 +55,16 @@ const Register = () => {
             <div>
                 <div className="hero w-3/5 mx-auto">
                     <div className="hero-content flex-col w-full">
+
+                        {/* heading */}
                         <div className="text-center">
                             <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor">Register now!</h1>
                             <p className="py-6 text-secondaryColor">Create an account to save and manage your properties freely</p>
                         </div>
 
                         <div className="grid grid-cols-12 w-full gap-6">
+
+                            {/* left side form */}
                             <div className="col-span-4 flex flex-col justify-center items-center">
                                 <h2 className="text-xl font-semibold mb-4">Register using your social accounts</h2>
                                 <div className="flex gap-8 mb-8">
@@ -83,35 +89,53 @@ const Register = () => {
                             </div>
 
 
+                            {/* right side form */}
                             <div className="col-span-6 card shrink-0 w-full max-w-sm shadow-2xl ">
                                 <form onSubmit={handleRegister} className="card-body">
+
+                                    {/* input name */}
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-base font-medium text-secondaryColor">Name</span>
                                         </label>
                                         <input name="name" type="text" placeholder="Your name" className="input input-bordered" required />
                                     </div>
+
+                                    {/* input photo url */}
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-base font-medium text-secondaryColor">PhotoUrl</span>
                                         </label>
                                         <input name="photoUrl" type="text" placeholder="Photo Url" className="input input-bordered" required />
                                     </div>
+
+                                    {/* input email */}
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-base font-medium text-secondaryColor">Email</span>
                                         </label>
                                         <input name="email" type="email" placeholder="email" className="input input-bordered" required />
                                     </div>
+
+                                    {/* input password */}
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-base font-medium text-secondaryColor">Password</span>
                                         </label>
-                                        <input name="password" type="password" placeholder="password" className="input input-bordered" required />
+                                        <div className="flex items-center">
+                                            <input name="password" type={showPassword ? "text" : "password"} placeholder="password" className="input input-bordered w-full" required />
+                                            <span className="cursor-pointer -ml-6 text-lg hover:text-primaryColor" onClick={() => setShowPassword(!showPassword)}>
+                                                {
+                                                    showPassword ? <FaEyeSlash></FaEyeSlash> :  <FaEye></FaEye>
+                                                }
+                                            </span>
+                                        </div>
                                         <label className="label">
                                             <a className="link link-error link-hover hover:link-info" href="#">Forgot password?</a>
                                         </label>
                                     </div>
+
+                                    {/* register button */}
                                     <div className="form-control mt-6">
                                         <button className="btn bg-primaryColor border-primaryColor text-xl hover:bg-lime-600">Register</button>
                                     </div>
