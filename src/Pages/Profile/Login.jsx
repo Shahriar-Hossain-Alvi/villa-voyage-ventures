@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
-    const {signInUser} = useContext(AuthContext);
+    const { user, signInUser } = useContext(AuthContext);
 
     const handleLogin = e => {
         e.preventDefault();
@@ -18,18 +18,24 @@ const Login = () => {
 
         const email = form.get('email');
         const password = form.get('password');
+        
 
-        console.log(email, password);
-
-        //sign in user
-        signInUser(email, password)
-        .then(result=>{
-            console.log(result.user);
-            toast('Signed In successfully!')
-        })
-        .catch(error=>{
-            console.error(error);
-        })
+        if (user) {
+            toast.error('Already logged in');
+        }
+        else {
+            //sign in user
+            signInUser(email, password)
+                .then(result => {
+                    console.log(result.user);
+                    toast('Signed In successfully!');
+                })
+                .catch(error => {
+                    toast.error(error.message);
+                    console.error(error);
+                });
+        }
+        e.currentTarget.reset();
     }
 
     return (

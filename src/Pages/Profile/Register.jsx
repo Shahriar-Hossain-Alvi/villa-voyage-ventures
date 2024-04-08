@@ -4,6 +4,8 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -18,16 +20,31 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
 
-        console.log(name, photoUrl);
+        //password validation
+        if(password.length < 6){
+            toast.error('Password should be at least 6 character');
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            toast.error('Password should contain at least 1 uppercase character');
+            return;
+        }
+        else if(!/[a-z]/.test(password)){
+            toast.error('Password should contain at least 1 lowercase character');
+            return;
+        }
 
         //create new user
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast('Profile Created successfully!');
             })
             .catch(error => {
+                toast.error(error.message)
                 console.error(error);
-            })
+            });
+        e.currentTarget.reset();
     }
 
     return (
@@ -99,6 +116,7 @@ const Register = () => {
                                         <button className="btn bg-primaryColor border-primaryColor text-xl hover:bg-lime-600">Register</button>
                                     </div>
                                 </form>
+                                <ToastContainer></ToastContainer>
                             </div>
                         </div>
                     </div>
