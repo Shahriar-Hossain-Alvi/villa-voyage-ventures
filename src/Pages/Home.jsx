@@ -9,6 +9,7 @@ const Home = () => {
     const allEstates = useLoaderData();
 
     return (
+
         <div>
             <Navbar></Navbar>
 

@@ -5,6 +5,7 @@ import UpdateProfile from "../Pages/Profile/UpdateProfile";
 import UserProfile from "../Pages/Profile/UserProfile";
 import Login from "../Pages/Profile/Login";
 import Register from "../Pages/Profile/Register";
+import EstateDetails from "../Pages/Estates/EstateDetails";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +15,12 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: ()=>fetch('fakeData.json')
+                loader: ()=>fetch('../fakeData.json')
+            },
+            {
+                path: "/estateCard/:id",
+                element: <EstateDetails></EstateDetails>,
+                loader: ()=>fetch("../fakeData.json")
             },
             {
                 path: "/login",

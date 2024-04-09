@@ -2,6 +2,8 @@
     {
         "id": 1,
         "image_link": "https://i.ibb.co/8DGNWPw/beach-Front-Hotel.jpg",
+        "image_2": "https://i.ibb.co/rms599g/restaurants3.jpg",
+        "image_3": "https://i.ibb.co/ZS6h0NY/pool2.jpg",
         "estate_title": "Luxury Beachfront Hotel",
         "segment_name": "Hotels",
         "short_description": "Experience luxury and relaxation at this beachfront hotel.",
@@ -19,6 +21,8 @@
     {
         "id": 2,
         "image_link": "https://i.ibb.co/BCkR16J/roadside-Motel.jpg",
+        "image_2": "https://i.ibb.co/tsrc0Xr/parking3.jpg",
+        "image_3": "https://i.ibb.co/prV8QfM/breakfast2.jpg",
         "estate_title": "Cozy Roadside Motel",
         "segment_name": "Motels",
         "short_description": "Convenient and comfortable lodging for travelers on the go.",
@@ -36,6 +40,8 @@
     {
         "id": 3,
         "image_link": "https://i.ibb.co/3kQm3QJ/tropical-Resort.jpg",
+        "image_2": "https://i.ibb.co/kDFsfsK/ballroom.webp",
+        "image_3": "https://i.ibb.co/C2Jcq9n/hottub.jpg",
         "estate_title": "Tropical Resort Getaway",
         "segment_name": "Resorts",
         "short_description": "Escape to paradise at this luxurious tropical resort.",
@@ -53,6 +59,8 @@
     {
         "id": 4,
         "image_link": "https://i.ibb.co/DYrSsS0/mountain-Cabin.jpg",
+        "image_2": "https://i.ibb.co/6WHByrf/hiking2.jpg",
+        "image_3": "https://i.ibb.co/PWmyrCd/fireplace.jpg",
         "estate_title": "Scenic Mountain Cabin",
         "segment_name": "Vacation rentals",
         "short_description": "Experience the beauty of nature in this cozy mountain cabin.",
@@ -70,6 +78,8 @@
     {
         "id": 5,
         "image_link": "https://i.ibb.co/nBFR08D/forest-Lodge.jpg",
+        "image_2": "https://i.ibb.co/PWmyrCd/fireplace.jpg",
+        "image_3": "https://i.ibb.co/ncRDT8B/businesscentre2.jpg",
         "estate_title": "Rustic Forest Lodge",
         "segment_name": "Lodges",
         "short_description": "Immerse yourself in nature at this rustic forest lodge.",
@@ -87,6 +97,8 @@
     {
         "id": 6,
         "image_link": "https://i.ibb.co/Lk1rd17/Charming-Countryside-Guesthouse.jpg",
+        "image_2": "https://i.ibb.co/njGZsrq/restaurant.jpg",
+        "image_3": "https://i.ibb.co/DkLTNFL/bedroom.jpg",
         "estate_title": "Charming Countryside Guesthouse",
         "segment_name": "Guesthouses",
         "short_description": "Experience genuine hospitality at this charming countryside guesthouse.",
@@ -104,6 +116,8 @@
     {
         "id": 7,
         "image_link": "https://i.ibb.co/fQm5sHM/City-Center-Boutique-Hotel.jpg",
+        "image_2": "https://i.ibb.co/YcRD5bk/restaurants2.jpg",
+        "image_3": "https://i.ibb.co/ws39p2c/bedroom2.jpg",
         "estate_title": "City Center Boutique Hotel",
         "segment_name": "Hotels",
         "short_description": "Discover urban sophistication at this boutique hotel in the heart of the city.",
@@ -121,6 +135,8 @@
     {
         "id": 8,
         "image_link": "https://i.ibb.co/Vx8bymc/Ski-Resort-Retreat.jpg",
+        "image_2": "https://i.ibb.co/k9Z6zZw/ski2.jpg",
+        "image_3": "https://i.ibb.co/4MT2Vhc/spa2.jpg",
         "estate_title": "Ski Resort Retreat",
         "segment_name": "Resorts",
         "short_description": "Experience winter wonderland at this ski resort nestled in the mountains.",
@@ -138,6 +154,8 @@
     {
         "id": 9,
         "image_link": "https://i.ibb.co/q1HG3ys/Seaside-Bedand-Breakfast.jpg",
+        "image_2": "https://i.ibb.co/qsvGyHw/breakfast.jpg",
+        "image_3": "https://i.ibb.co/wYSbQwL/bedroom4.png",
         "estate_title": "Seaside Bed and Breakfast",
         "segment_name": "Guesthouses",
         "short_description": "Experience coastal charm at this quaint seaside bed and breakfast.",
@@ -155,6 +173,8 @@
     {
         "id": 10,
         "image_link": "https://i.ibb.co/7gcCs83/Luxury-Island-Resort.jpg",
+        "image_2": "https://i.ibb.co/rvYChrY/spa.jpg",
+        "image_3": "https://i.ibb.co/pz76d2L/bedroom3.jpg",
         "estate_title": "Luxury Island Resort",
         "segment_name": "Resorts",
         "short_description": "Own a piece of paradise at this luxury island resort.",
@@ -172,6 +192,8 @@
     {
         "id": 11,
         "image_link": "https://i.ibb.co/tB9Gss4/Historic-Downtown-Hotel.jpg",
+        "image_2": "https://i.ibb.co/pxNLvPf/business-Center.jpg",
+        "image_3": "https://i.ibb.co/HDRzFcJ/ballrooms2.jpg",
         "estate_title": "Historic Downtown Hotel",
         "segment_name": "Hotels",
         "short_description": "Own a piece of history with this historic downtown hotel.",
@@ -189,6 +211,8 @@
     {
         "id": 12,
         "image_link": "https://i.ibb.co/rQMwhFg/Secluded-Mountain-Chalet.jpg",
+        "image_2": "https://i.ibb.co/Rz2g7gz/Hottub2.jpg",
+        "image_3": "https://i.ibb.co/Gc0psvj/fireplace2.jpg",
         "estate_title": "Secluded Mountain Chalet",
         "segment_name": "Vacation rentals",
         "short_description": "Own your mountain retreat with this secluded chalet.",

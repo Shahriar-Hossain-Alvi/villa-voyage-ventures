@@ -15,13 +15,13 @@ const EstateCard = ({ estate }) => {
                 {/* image */}
                 <div className="relative">
                     <span>Featured</span>
-                    <img className="h-56" src={image_link} alt="" />
-                    <div className="absolute bottom-0 right-0 flex gap-4">
-                        <button className="btn border-none hover:bg-transparent bg-transparent tooltip text-xl" data-tip="Add to favorite">
-                            <FaHeart className="text-white " />
+                    <img className="h-56 w-full" src={image_link} alt="" />
+                    <div className="absolute bottom-2 right-2 flex gap-4">
+                        <button className="btn btn-sm bg-transparent tooltip text-white hover:text-primaryColor hover:bg-secondaryColor" data-tip="Add to favorite">
+                            <FaHeart />
                         </button>
-                        <button className="btn border-none hover:bg-transparent bg-transparent tooltip text-xl" data-tip="Add to compare">
-                            <MdCompareArrows className="text-white" />
+                        <button className="btn btn-sm bg-transparent tooltip text-white hover:text-primaryColor hover:bg-secondaryColor" data-tip="Add to compare">
+                            <MdCompareArrows />
                         </button>
                     </div>
                 </div>
