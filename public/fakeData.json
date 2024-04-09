@@ -69,8 +69,8 @@
     },
     {
         "id": 5,
-        "image_link": "lodge_image_1.jpg",
-        "estate_title": "https://i.ibb.co/nBFR08D/forest-Lodge.jpg",
+        "image_link": "https://i.ibb.co/nBFR08D/forest-Lodge.jpg",
+        "estate_title": "Rustic Forest Lodge",
         "segment_name": "Lodges",
         "short_description": "Immerse yourself in nature at this rustic forest lodge.",
         "detailed_description": "Experience tranquility and adventure with cozy cabins, wildlife tours, and campfire evenings at this forest lodge.",
