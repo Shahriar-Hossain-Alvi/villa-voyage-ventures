@@ -39,7 +39,7 @@ const Navbar = () => {
                     {
                         user ?
                             <div className="flex gap-1 items-center">
-                                <div className="tooltip tooltip-bottom" data-tip="lj">
+                                <div className="tooltip tooltip-bottom" data-tip="user.displayName">
                                     <img src="https://i.ibb.co/Nnwcg24/profile.png" alt="" />
                                 </div>
                                 <button onClick={handleLogOut} className="btn text-lg bg-secondaryColor text-primaryColor border-secondaryColor hover:bg-primaryColor hover:border-secondaryColor hover:text-white">Logout</button>

@@ -7,10 +7,11 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'animate.css';
 
 const Login = () => {
 
-    const { user, signInUser } = useContext(AuthContext);
+    const { user, signInUser, googlePopUpSignIn, githubPopUpSignIn } = useContext(AuthContext);
 
     const handleLogin = e => {
         e.preventDefault();
@@ -38,29 +39,51 @@ const Login = () => {
         e.currentTarget.reset();
     }
 
+    //google sign in
+    const handleGoogleSignIn = ()=>{
+        googlePopUpSignIn()
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error(error);
+        })
+    }
+
+    //github sign in
+    const handleGithubSignIn = ()=>{
+        githubPopUpSignIn()
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error(error);
+        })
+    }
+
     return (
         <div>
             <Navbar></Navbar>
             <div>
                 <div className="hero w-3/5 mx-auto">
                     <div className="hero-content flex-col w-full">
-                        <div className="text-center">
+                        <div className="text-center animate__animated animate__zoomIn">
                             <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor">Login now!</h1>
                             <p className="py-6 text-secondaryColor">Login into your account and continue where you left off</p>
                         </div>
 
                         <div className="grid grid-cols-12 w-full gap-6">
 
-                            <div className="col-span-4 flex flex-col justify-center items-center">
+                            <div className="col-span-4 flex flex-col justify-center items-center animate__animated animate__backInLeft">
                                 <h2 className="text-xl font-semibold mb-4">Login using your social accounts</h2>
                                 <div className="flex gap-8 mb-8">
                                     <div>
-                                        <button className="btn btn-circle bg-transparent border-base-300">
+                                        <button onClick={handleGoogleSignIn} className="btn btn-circle bg-transparent border-base-300">
                                             <FcGoogle></FcGoogle>
                                         </button>
                                     </div>
                                     <div>
-                                        <button className="btn btn-circle bg-transparent border-base-300">
+                                        <button onClick={handleGithubSignIn} className="btn btn-circle bg-transparent border-base-300">
                                             <FaGithub></FaGithub>
                                         </button>
                                     </div>
@@ -71,11 +94,11 @@ const Login = () => {
 
 
                             <div className="col-span-2 flex items-center justify-center">
-                                <h4 className="text-4xl font-playfairDisplay bg-secondaryColor text-primaryColor p-4 rounded-full">OR</h4>
+                                <h4 className="text-4xl font-playfairDisplay bg-secondaryColor text-primaryColor p-4 rounded-full animate__animated animate__flip">OR</h4>
                             </div>
 
 
-                            <div className="col-span-6 card shrink-0 w-full max-w-sm shadow-2xl ">
+                            <div className="col-span-6 card shrink-0 w-full max-w-sm shadow-2xl animate__animated animate__backInRight">
                                 <form onSubmit={handleLogin} className="card-body =">
                                     <div className="form-control">
                                         <label className="label">
