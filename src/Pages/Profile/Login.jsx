@@ -82,6 +82,7 @@ const Login = () => {
         <div>
             <Navbar></Navbar>
             <div>
+                <ToastContainer />
                 <div className="hero w-3/5 mx-auto">
                     <div className="hero-content flex-col w-full">
                         <div className="text-center animate__animated animate__zoomIn">
@@ -136,7 +137,6 @@ const Login = () => {
                                         <button className="btn bg-primaryColor border-primaryColor text-xl hover:bg-lime-600">Login</button>
                                     </div>
                                 </form>
-                                <ToastContainer />
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ const Login = () => {
             <div className="mt-6">
                 <img className="w-full" src={footerArt} alt="" />
             </div>
-            
+
         </div>
     );
 };
