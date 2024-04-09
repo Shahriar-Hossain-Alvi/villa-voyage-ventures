@@ -5,6 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import 'animate.css';
+import footerArt from "../../assets/images/footer-art.png"
+import { Link } from "react-router-dom";
 
 const Register = () => {
 
@@ -56,7 +58,11 @@ const Register = () => {
                     {/* heading */}
                     <div className="animate__animated animate__backInRight">
                         <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor">Register now!</h1>
-                        <p className="py-6 text-secondaryColor">Create an account to save and manage your properties freely</p>
+                        <p className="py-6 text-secondaryColor font-medium text-lg">Create an account to save and manage your properties freely</p>
+
+                        <hr />
+
+                        <p className="font-medium text-lg mt-8">Already have an account? <Link className="underline text-red-500 font-bold" to="/login">Login</Link> now</p>
                     </div>
                 </div>
 
@@ -102,9 +108,6 @@ const Register = () => {
                                             }
                                         </span>
                                     </div>
-                                    <label className="label">
-                                        <a className="link link-error link-hover hover:link-info" href="#">Forgot password?</a>
-                                    </label>
                                 </div>
 
                                 {/* register button */}
@@ -116,6 +119,9 @@ const Register = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="mt-6">
+                <img className="w-full" src={footerArt} alt="" />
             </div>
         </div>
     );

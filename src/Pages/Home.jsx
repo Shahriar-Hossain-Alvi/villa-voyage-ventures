@@ -1,4 +1,5 @@
 import HomeBanner from "./HomeBanner/HomeBanner";
+import Footer from "./Shared/Footer";
 import Navbar from "./Shared/Navbar";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
                     <HomeBanner></HomeBanner>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

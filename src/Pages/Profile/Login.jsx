@@ -8,6 +8,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
+import footerArt from "../../assets/images/footer-art.png"
 
 const Login = () => {
 
@@ -19,7 +20,7 @@ const Login = () => {
 
         const email = form.get('email');
         const password = form.get('password');
-        
+
 
         if (user) {
             toast.error('Already logged in');
@@ -40,25 +41,41 @@ const Login = () => {
     }
 
     //google sign in
-    const handleGoogleSignIn = ()=>{
-        googlePopUpSignIn()
-        .then(result=>{
-            console.log(result.user);
-        })
-        .catch(error=>{
-            console.error(error);
-        })
+    const handleGoogleSignIn = () => {
+        if (user) {
+            toast.error('Already logged in');
+        }
+        else {
+            //sign in user
+            googlePopUpSignIn()
+                .then(result => {
+                    toast('Signed In successfully!');
+                    console.log(result.user);
+                })
+                .catch(error => {
+                    toast.error(error.message);
+                    console.error(error);
+                })
+        }
     }
 
     //github sign in
-    const handleGithubSignIn = ()=>{
-        githubPopUpSignIn()
-        .then(result=>{
-            console.log(result.user);
-        })
-        .catch(error=>{
-            console.error(error);
-        })
+    const handleGithubSignIn = () => {
+        if (user) {
+            toast.error('Already logged in');
+        }
+        else {
+            //sign in user
+            githubPopUpSignIn()
+                .then(result => {
+                    toast('Signed In successfully!');
+                    console.log(result.user);
+                })
+                .catch(error => {
+                    toast.error(error.message);
+                    console.error(error);
+                })
+        }
     }
 
     return (
@@ -89,7 +106,7 @@ const Login = () => {
                                     </div>
                                 </div>
 
-                                <p>Don't have an account? <Link to="/register" className="underline text-red-500">Register</Link> Now!</p>
+                                <p>Don't have an account? <Link to="/register" className="underline text-red-500 font-bold">Register</Link> Now!</p>
                             </div>
 
 
@@ -125,6 +142,10 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <div className="mt-6">
+                <img className="w-full" src={footerArt} alt="" />
+            </div>
+            
         </div>
     );
 };
