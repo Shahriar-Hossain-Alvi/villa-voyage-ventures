@@ -4,7 +4,7 @@ Welcome to Villa Voyage Ventures, your premier destination for luxury resort exp
 
 ## Npm Packages Used in this projects
 - **React Router**
-- **Tailwind CSS:**
+- **Tailwind CSS**
 - **Daisy Ui**
 - **React Toastify**
 - **Swiper Slider** 
@@ -26,9 +26,9 @@ Welcome to Villa Voyage Ventures, your premier destination for luxury resort exp
 
 - **Update Profile:** An useful feature that allows user to update their profile information like name and photo
 
-**User profile:** A dedicated page to see the detailed info of the user
+- **User profile:** A dedicated page to see the detailed info of the user
 
-**Login Option:** Multiple login option for all types of user. *Email-password*, *Google*, *Github*
+- **Login Option:** Multiple login option for all types of user. *Email-password*, *Google*, *Github*
 
 - **Responsiveness:** Responsive design for mobile, tablet and pc
 
@@ -36,3 +36,7 @@ Welcome to Villa Voyage Ventures, your premier destination for luxury resort exp
 
 ## Live Site:
 Ready to embark on your next adventure? Visit our website to discover our latest offerings, browse available accommodations, and book your dream getaway today.
+
+**Firebase:**
+**Surge:**
+**Netlify:**

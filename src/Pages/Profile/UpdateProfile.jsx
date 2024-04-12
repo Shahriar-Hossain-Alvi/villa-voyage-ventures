@@ -64,7 +64,10 @@ const UpdateProfile = () => {
                         <div className="grid grid-cols-2 w-full gap-10 mt-5">
                             <div className="flex flex-col justify-center order-2">
                                 <h2 className="text-4xl font-semibold mb-2">Current User</h2>
-                                <h2 className="text-6xl text-secondaryColor font-black font-playfairDisplay mb-2">{user.displayName}</h2>
+                                <h2 className="text-4xl text-secondaryColor font-black font-playfairDisplay mb-3">{user.displayName}</h2>
+
+                                <h4 className="text-2xl font-medium text-secondaryColor mb-3">Email: {user.email}</h4>
+                                <h4 className="text-lg text-secondaryColor mb-8">Photo Url: {user.photoURL}</h4>
                                 <p className="font-medium text-lg">Fill the form to update your profile name and image</p>
                                 <p><span className="text-red-600 text-xl">*</span> means required </p>
                             </div>

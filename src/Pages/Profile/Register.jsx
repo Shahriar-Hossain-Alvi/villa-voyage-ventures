@@ -85,7 +85,7 @@ const Register = () => {
 
                         <hr />
                         <div className="my-3">
-                            <p className="text-xl font-medium pb-2 text-secondaryColor">Password should contain -</p>
+                            <p className="text-xl font-medium pb-2 text-secondaryColor">Password must contain -</p>
                             <ul className="list-disc ml-6 space-y-1 text-lg font-semibold text-stone-600">
                                 <li>At least 6 character</li>
                                 <li>1 uppercase character</li>
