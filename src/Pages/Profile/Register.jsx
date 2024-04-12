@@ -50,8 +50,8 @@ const Register = () => {
                 updateProfile(result.user, {
                     displayName: name, photoURL: photoUrl
                 }).then(result => {
-                    setTimeout(()=>{
-                        navigate("/"); 
+                    setTimeout(() => {
+                        navigate("/");
                     }, 1500)
                     console.log(result.user);
                 }).catch((error) => {
@@ -64,7 +64,7 @@ const Register = () => {
             });
         e.currentTarget.reset();
     }
-    
+
 
 
     return (
@@ -76,21 +76,24 @@ const Register = () => {
             <Navbar></Navbar>
 
             <ToastContainer></ToastContainer>
-            <div className="grid grid-cols-2">
-                <div className="flex items-center justify-start order-2">
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-2">
+                <div className="lg:flex md:flex md:items-center md:justify-start lg:items-center lg:justify-start lg:order-2">
                     {/* heading */}
-                    <div className="animate__animated animate__backInRight">
-                        <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor">Register now!</h1>
-                        <p className="py-6 text-secondaryColor font-medium text-lg">Create an account to save and manage your properties freely</p>
+                    <div className="animate__animated animate__backInRight lg:text-left mt-10 lg:mt-0 px-4 lg:px-0">
+                        <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor text-center lg:text-left">Register now!</h1>
+                        <p className="py-6 text-center lg:text-left text-secondaryColor font-medium text-lg">Create an account to save and manage your properties freely</p>
 
                         <hr />
-                        <div className="my-3">
+                        <div className="my-3 flex flex-col items-center lg:items-start">
                             <p className="text-xl font-medium pb-2 text-secondaryColor">Password must contain -</p>
-                            <ul className="list-disc ml-6 space-y-1 text-lg font-semibold text-stone-600">
-                                <li>At least 6 character</li>
-                                <li>1 uppercase character</li>
-                                <li>1 lowercase character</li>
-                            </ul>
+                            <div>
+                                <ul className="list-disc list-inside list space-y-1 text-lg font-semibold text-stone-600">
+                                    <li>At least 6 character</li>
+                                    <li>1 uppercase character</li>
+                                    <li>1 lowercase character</li>
+                                </ul>
+                            </div>
                         </div>
                         <hr />
 
