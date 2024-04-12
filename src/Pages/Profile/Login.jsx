@@ -13,12 +13,13 @@ import Footer from "../Shared/Footer";
 import { Helmet } from "react-helmet-async";
 
 const Login = () => {
+    //get the location
     const location = useLocation();
     const navigate = useNavigate();
-    console.log('location in the login page', location);
 
     const { user, signInUser, googlePopUpSignIn, githubPopUpSignIn } = useContext(AuthContext);
 
+    //email-password sign in
     const handleLogin = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
@@ -99,23 +100,27 @@ const Login = () => {
 
     return (
         <div>
-             <Helmet>
+            <Helmet>
                 <title>Login | Villa Voyage Ventures</title>
             </Helmet>
 
             <Navbar></Navbar>
+
+
             <div>
                 <ToastContainer />
-                <div className="hero w-3/5 mx-auto">
+                <div className="hero w-full mx-auto">
                     <div className="hero-content flex-col w-full">
+                        {/* log in text */}
                         <div className="text-center animate__animated animate__zoomIn">
                             <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor">Login now!</h1>
                             <p className="py-6 text-secondaryColor">Login into your account and continue where you left off</p>
                         </div>
 
-                        <div className="grid grid-cols-12 w-full gap-6">
-
-                            <div className="col-span-4 flex flex-col justify-center items-center animate__animated animate__backInLeft">
+                        {/* log in options */}
+                        <div className="grid lg:grid-cols-12 w-full lg:gap-6">
+                            {/* social log in */}
+                            <div className="lg:col-span-4 flex flex-col justify-center  items-center lg:items-end animate__animated animate__backInLeft mb-10 lg:mb-0">
                                 <h2 className="text-xl font-semibold mb-4">Login using your social accounts</h2>
                                 <div className="flex gap-8 mb-8">
                                     <div>
@@ -133,13 +138,13 @@ const Login = () => {
                                 <p>Don't have an account? <Link to="/register" className="underline text-red-500 font-bold">Register</Link> Now!</p>
                             </div>
 
-
-                            <div className="col-span-2 flex items-center justify-center">
+                            {/* Or */}
+                            <div className="lg:col-span-2 flex items-center justify-center">
                                 <h4 className="text-4xl font-playfairDisplay bg-secondaryColor text-primaryColor p-4 rounded-full animate__animated animate__flip">OR</h4>
                             </div>
 
-
-                            <div className="col-span-6 card shrink-0 w-full max-w-sm shadow-2xl animate__animated animate__backInRight">
+                            {/* email-password sign in */}
+                            <div className="lg:col-span-6 card shrink-0 w-full shadow-2xl animate__animated animate__backInRight">
                                 <form onSubmit={handleLogin} className="card-body =">
                                     <div className="form-control">
                                         <label className="label">
