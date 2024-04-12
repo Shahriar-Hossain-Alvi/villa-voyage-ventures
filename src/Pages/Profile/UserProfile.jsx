@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
+import Footer from "../Shared/Footer";
+import footerArt from "../../assets/images/footer-art.png"
 
 const UserProfile = () => {
 
@@ -37,7 +39,13 @@ const UserProfile = () => {
                                     {/* row 2 */}
                                     <tr>
                                         <td>Email Address</td>
-                                        <td>{user.email}</td>
+                                        <td>
+                                            {
+                                                user.email===null? "Unavailable"
+                                                : 
+                                                user.email
+                                            }
+                                        </td>
                                     </tr>
                                     {/* row 3 */}
                                     <tr>
@@ -88,6 +96,11 @@ const UserProfile = () => {
                     </div>
                 </div>
             </div>
+            
+            <div className="mt-20">
+                <img className="w-full" src={footerArt} alt="" />
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -6,6 +6,8 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { getAuth, updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Shared/Footer";
+import footerArt from "../../assets/images/footer-art.png"
 
 const auth = getAuth();
 
@@ -105,6 +107,11 @@ const UpdateProfile = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="mt-20">
+                <img className="w-full" src={footerArt} alt="" />
+            </div>
+            <Footer></Footer>
         </div>
     );
 };

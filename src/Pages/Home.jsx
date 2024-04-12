@@ -4,15 +4,25 @@ import HomeBanner from "./HomeBanner/HomeBanner";
 import Footer from "./Shared/Footer";
 import Navbar from "./Shared/Navbar";
 import { useLoaderData } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Home = () => {
 
     const allEstates = useLoaderData();
 
+    const { loading } = useContext(AuthContext);
+    if (loading) {
+        return <div className="flex justify-center mt-40">
+            <span className="loading loading-spinner loading-lg"></span>
+        </div>
+    }
+
     return (
 
+
         <div>
-             <Helmet>
+            <Helmet>
                 <title>Home | Villa Voyage Ventures</title>
             </Helmet>
 

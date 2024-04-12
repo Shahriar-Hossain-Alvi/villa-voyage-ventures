@@ -33,8 +33,7 @@ const Login = () => {
         else {
             //sign in user
             signInUser(email, password)
-                .then(result => {
-                    console.log(result.user);
+                .then(() => {
                     toast('Signed In successfully!');
 
                     //navigate after login
@@ -46,7 +45,6 @@ const Login = () => {
                 })
                 .catch(error => {
                     toast.error(error.message);
-                    console.error(error);
                 });
         }
         e.currentTarget.reset();
@@ -62,11 +60,15 @@ const Login = () => {
             googlePopUpSignIn()
                 .then(result => {
                     toast('Signed In successfully!');
+
+                    //navigate after login
+                    setTimeout(() => {
+                        navigate(location?.state ? location.state : '/');
+                    }, 1500)
                     console.log(result.user);
                 })
                 .catch(error => {
                     toast.error(error.message);
-                    console.error(error);
                 })
         }
     }
@@ -81,6 +83,11 @@ const Login = () => {
             githubPopUpSignIn()
                 .then(result => {
                     toast('Signed In successfully!');
+
+                    //navigate after login
+                    setTimeout(() => {
+                        navigate(location?.state ? location.state : '/');
+                    }, 1500)
                     console.log(result.user);
                 })
                 .catch(error => {

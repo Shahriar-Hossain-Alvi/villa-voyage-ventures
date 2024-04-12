@@ -12,13 +12,27 @@ Welcome to Villa Voyage Ventures, your premier destination for luxury resort exp
 - **React Leaflet**
 - **React Icons**
 - **PropTypes**
+- **React async helmet**
+- **Firebase**
+
 
 ## Features
 
-- **Luxurious Accommodations:** Explore our handpicked selection of villas, resorts, and vacation rentals, each offering opulent amenities and stunning surroundings.
-- **Exquisite Dining:** Indulge in culinary delights crafted by world-class chefs, featuring locally sourced ingredients and international flavors.
-- **Adventure and Relaxation:** Whether you seek thrilling outdoor activities or tranquil moments of relaxation, our properties offer a perfect balance for every guest.
-- **Exceptional Service:** From attentive concierge assistance to personalized itineraries, our dedicated team is committed to ensuring your stay exceeds all expectations.
+- **Navigation:** Navigate Easily from page to page with the help of react router
+
+- **Slider:** A banner with the images of your various properties with a slider
+ 
+- **Estate Listings:** Display the list of properties with name, image, location info and tags
+
+- **Update Profile:** An useful feature that allows user to update their profile information like name and photo
+
+**User profile:** A dedicated page to see the detailed info of the user
+
+**Login Option:** Multiple login option for all types of user. *Email-password*, *Google*, *Github*
+
+- **Responsiveness:** Responsive design for mobile, tablet and pc
+
+- **Footer:** Eye catching footer with quick links and social account links
 
 ## Live Site:
 Ready to embark on your next adventure? Visit our website to discover our latest offerings, browse available accommodations, and book your dream getaway today.
