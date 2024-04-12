@@ -2,15 +2,20 @@
 import Navbar from "../Shared/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'animate.css';
 import footerArt from "../../assets/images/footer-art.png"
+import Footer from "../Shared/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('location in the login page', location);
 
     const { user, signInUser, googlePopUpSignIn, githubPopUpSignIn } = useContext(AuthContext);
 
@@ -31,6 +36,13 @@ const Login = () => {
                 .then(result => {
                     console.log(result.user);
                     toast('Signed In successfully!');
+
+                    //navigate after login
+                    setTimeout(() => {
+                        navigate(location?.state ? location.state : '/');
+                    }, 1500)
+
+
                 })
                 .catch(error => {
                     toast.error(error.message);
@@ -80,6 +92,10 @@ const Login = () => {
 
     return (
         <div>
+             <Helmet>
+                <title>Login | Villa Voyage Ventures</title>
+            </Helmet>
+
             <Navbar></Navbar>
             <div>
                 <ToastContainer />
@@ -146,6 +162,7 @@ const Login = () => {
                 <img className="w-full" src={footerArt} alt="" />
             </div>
 
+            <Footer></Footer>
         </div>
     );
 };

@@ -6,11 +6,14 @@ import UserProfile from "../Pages/Profile/UserProfile";
 import Login from "../Pages/Profile/Login";
 import Register from "../Pages/Profile/Register";
 import EstateDetails from "../Pages/Estates/EstateDetails";
+import ErrorPage from "../Layouts/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -19,7 +22,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/estateCard/:id",
-                element: <EstateDetails></EstateDetails>,
+                element: <PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
                 loader: ()=>fetch("../fakeData.json")
             },
             {
@@ -32,11 +35,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/userprofile",
-                element: <UserProfile></UserProfile>
+                element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
             },
             {
                 path: "/updateprofile",
-                element: <UpdateProfile></UpdateProfile>
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             }
         ]
     },

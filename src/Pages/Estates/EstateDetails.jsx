@@ -6,6 +6,7 @@ import { MdFavorite } from "react-icons/md";
 import { RiPrinterFill } from "react-icons/ri";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Footer from "../Shared/Footer";
+import { Helmet } from "react-helmet-async";
 
 
 const EstateDetails = () => {
@@ -20,6 +21,10 @@ const EstateDetails = () => {
 
     return (
         <div>
+             <Helmet>
+                <title>{estate_title} | Villa Voyage Ventures</title>
+            </Helmet>
+
             <Navbar></Navbar>
 
             <div className="mt-8">
@@ -81,8 +86,8 @@ const EstateDetails = () => {
                             <div className="flex flex-wrap gap-2 items-center">
                                 <h2 className="text-lg font-medium text-secondaryColor">Facilities:</h2>
                                 {
-                                    facilities.map(item => <>
-                                        <button className="btn btn-sm font-bold text-white bg-[#1cb2ff]">{item}</button>
+                                    facilities.map((item, index) => <>
+                                        <button key={index} className="btn btn-sm font-bold text-white bg-[#1cb2ff]">{item}</button>
                                     </>)
                                 }
                             </div>

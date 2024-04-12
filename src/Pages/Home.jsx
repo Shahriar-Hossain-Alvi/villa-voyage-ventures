@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import EstateCard from "./Estates/EstateCard";
 import HomeBanner from "./HomeBanner/HomeBanner";
 import Footer from "./Shared/Footer";
@@ -11,6 +12,10 @@ const Home = () => {
     return (
 
         <div>
+             <Helmet>
+                <title>Home | Villa Voyage Ventures</title>
+            </Helmet>
+
             <Navbar></Navbar>
 
             {/* banner */}
