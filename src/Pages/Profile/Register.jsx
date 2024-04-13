@@ -70,7 +70,7 @@ const Register = () => {
     return (
         <div>
             <Helmet>
-                <title>Villa Voyage Venture | Register</title>
+                <title>Register | Villa Voyage Venture</title>
             </Helmet>
 
             <Navbar></Navbar>

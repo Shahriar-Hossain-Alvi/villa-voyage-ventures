@@ -7,26 +7,48 @@ import { RiPrinterFill } from "react-icons/ri";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Footer from "../Shared/Footer";
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import { saveFavoriteList } from "../../Utility/LocalStorage";
 
 
 const EstateDetails = () => {
+    //load estate data
     const allEstates = useLoaderData();
 
+    //get dynamic id as integer
     const { id } = useParams();
     const idInt = parseInt(id);
 
+    //state for favorite button
+    const [clickedFavoriteButton, setClickedFavoriteButton] = useState(false);
+
+    //get data for current id
     const estate = allEstates.find(estate => parseInt(estate.id) === idInt);
 
     const { estate_title, image_link, image_2, image_3, detailed_description, segment_name, status, price, area, location, facilities } = estate;
 
+    //handle favorite button
+    const handleFavoriteButton = () => {
+        if (clickedFavoriteButton === true) {
+            toast.error('Already added in the favorite list')
+        }
+        else{
+            saveFavoriteList(idInt);
+            setClickedFavoriteButton(true);
+            toast.success('Added to your favorite list')
+        }
+    }
+
     return (
         <div>
-             <Helmet>
+            <Helmet>
                 <title>{estate_title} | Villa Voyage Ventures</title>
             </Helmet>
 
             <Navbar></Navbar>
 
+            <ToastContainer />
             <div className="mt-8 container mx-auto px-2 lg:px-0">
                 <h3 className="text-3xl md:text-5xl lg:text-5xl text-center font-bold font-raleway">{estate_title}</h3>
 
@@ -54,7 +76,7 @@ const EstateDetails = () => {
                             <button className="btn bg-[#1cb2ff] text-white hover:bg-secondaryColor  tooltip" data-tip="Share">
                                 <FaShareAlt />
                             </button>
-                            <button className="btn bg-[#1cb2ff] text-white hover:bg-secondaryColor tooltip" data-tip="Add to favorite">
+                            <button onClick={handleFavoriteButton} className="btn bg-[#1cb2ff] text-white hover:bg-secondaryColor tooltip" data-tip="Add to favorite">
                                 <MdFavorite />
                             </button>
                             <button className="btn bg-[#1cb2ff] text-white hover:bg-secondaryColor  tooltip" data-tip="Print">
@@ -76,13 +98,13 @@ const EstateDetails = () => {
 
                         {/* additional information */}
                         <div className="border rounded-xl p-4 bg-[#F7F7F7] space-y-3 flex flex-col justify-center">
-                            <h2 className="text-lg font-medium text-secondaryColor">Status: <span  className="font-bold text-secondaryColor capitalize">{status}</span></h2>
+                            <h2 className="text-lg font-medium text-secondaryColor">Status: <span className="font-bold text-secondaryColor capitalize">{status}</span></h2>
 
-                            <h2 className="border-y-2 border-dotted py-2 text-lg font-medium text-secondaryColor">Price: <span  className="font-bold text-secondaryColor capitalize">{price}</span></h2>
+                            <h2 className="border-y-2 border-dotted py-2 text-lg font-medium text-secondaryColor">Price: <span className="font-bold text-secondaryColor capitalize">{price}</span></h2>
 
-                            <h2 className="text-lg font-medium text-secondaryColor">Area: <span  className="font-bold text-secondaryColor capitalize">{area}</span></h2>
+                            <h2 className="text-lg font-medium text-secondaryColor">Area: <span className="font-bold text-secondaryColor capitalize">{area}</span></h2>
 
-                            <h2 className="border-y-2 border-dotted py-2 text-lg font-medium text-secondaryColor">Location: <span  className="font-bold text-secondaryColor capitalize">{location}</span></h2>
+                            <h2 className="border-y-2 border-dotted py-2 text-lg font-medium text-secondaryColor">Location: <span className="font-bold text-secondaryColor capitalize">{location}</span></h2>
 
                             <div className="flex flex-wrap gap-2 items-center">
                                 <h2 className="text-lg font-medium text-secondaryColor">Facilities:</h2>

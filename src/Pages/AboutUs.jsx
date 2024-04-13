@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Helmet } from "react-helmet-async";
 import Footer from "./Shared/Footer";
 import Navbar from "./Shared/Navbar";
 
@@ -7,6 +8,10 @@ const AboutUs = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>About us | Villa Voyage Ventures</title>
+            </Helmet>
+
             <Navbar></Navbar>
             <div className="container mx-auto mb-16 px-4 lg:px-0">
                 <h1 className="text-4xl font-black text-center mb-10">About Us:</h1>

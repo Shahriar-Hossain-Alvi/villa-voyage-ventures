@@ -9,8 +9,6 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 const Home = () => {
 
-
-
     const allEstates = useLoaderData();
 
     const { loading } = useContext(AuthContext);
@@ -47,7 +45,7 @@ const Home = () => {
                         <h2 className="font-raleway font-bold text-4xl mb-2">Our Offerings</h2>
                         <p className="text-lg font-medium">Check out some of our properties.</p>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
                         {
                             allEstates.map(estate => <EstateCard key={estate.id} estate={estate}></EstateCard>)
                         }

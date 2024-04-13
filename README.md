@@ -23,9 +23,8 @@ Welcome to Villa Voyage Ventures, your premier destination for luxury resort exp
 ## Live Site:
 Ready to embark on your next adventure? Visit our website to discover our latest offerings, browse available accommodations, and book your dream getaway today.
 
-**Firebase:**
-**Surge:**
-**Netlify:**
+**Surge:** https://villa-voyage-venture.surge.sh/
+**Firebase:** https://villa-voyage-ventures.web.app/
 
 
 ## Npm Packages Used in this projects
