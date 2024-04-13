@@ -41,7 +41,7 @@ const Home = () => {
             {/* estate section */}
             <div className="my-16 lg:my-36">
                 <div className="text-center mb-10">
-                    <h2 className="font-playfairDisplay font-bold text-4xl mb-2">Our Offerings</h2>
+                    <h2 className="font-raleway font-bold text-4xl mb-2">Our Offerings</h2>
                     <p className="text-lg font-medium">Check out some of our properties.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-6">

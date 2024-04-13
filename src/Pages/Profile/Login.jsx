@@ -113,14 +113,14 @@ const Login = () => {
                     <div className="hero-content flex-col w-full">
                         {/* log in text */}
                         <div className="text-center animate__animated animate__zoomIn">
-                            <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor">Login now!</h1>
+                            <h1 className="text-5xl font-bold font-raleway text-secondaryColor">Login now!</h1>
                             <p className="py-6 text-secondaryColor">Login into your account and continue where you left off</p>
                         </div>
 
                         {/* log in options */}
                         <div className="grid lg:grid-cols-12 w-full lg:gap-6">
                             {/* social log in */}
-                            <div className="lg:col-span-4 flex flex-col justify-center  items-center lg:items-end animate__animated animate__backInLeft mb-10 lg:mb-0">
+                            <div className="lg:col-span-5 flex flex-col justify-center  items-center lg:items-end animate__animated animate__backInLeft mb-10 lg:mb-0">
                                 <h2 className="text-xl font-semibold mb-4">Login using your social accounts</h2>
                                 <div className="flex gap-8 mb-8">
                                     <div>
@@ -139,9 +139,7 @@ const Login = () => {
                             </div>
 
                             {/* Or */}
-                            <div className="lg:col-span-2 flex items-center justify-center">
-                                <h4 className="text-4xl font-playfairDisplay bg-secondaryColor text-primaryColor p-4 rounded-full animate__animated animate__flip">OR</h4>
-                            </div>
+                            <div className="divider lg:divider-horizontal text-xl">OR</div>
 
                             {/* email-password sign in */}
                             <div className="lg:col-span-6 card shrink-0 w-full shadow-2xl animate__animated animate__backInRight">

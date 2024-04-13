@@ -36,7 +36,7 @@ const EstateCard = ({ estate }) => {
                 <p className="mb-2">{short_description}</p>
                 <div className="badge badge-error text-white badge-lg block">#{status}</div>
                 <Link to={`/estateCard/${id}`}>
-                    <button className="btn w-full mt-5 bg-primaryColor text-white font-playfairDisplay font-bold text-lg">View Property</button>
+                    <button className="btn w-full mt-5 bg-primaryColor text-white font-raleway font-bold text-lg">View Property</button>
                 </Link>
             </div>
         </div>

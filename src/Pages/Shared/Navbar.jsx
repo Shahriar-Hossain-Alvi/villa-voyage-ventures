@@ -15,10 +15,10 @@ const Navbar = () => {
         <li><NavLink to="/updateprofile">Update Profile</NavLink></li>
         <li><NavLink to="/userprofile">User Profile</NavLink></li>
     </>
-
+    
     return (
         <div>
-            <div className="navbar bg-primaryColor">
+            <div id="menuBar" className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

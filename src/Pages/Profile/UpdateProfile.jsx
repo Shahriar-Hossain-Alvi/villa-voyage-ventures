@@ -58,17 +58,17 @@ const UpdateProfile = () => {
                 <div className="hero w-full mx-auto">
                     <div className="hero-content flex-col w-full">
                         <div className="text-center">
-                            <h1 className="text-4xl font-bold font-playfairDisplay text-secondaryColor">Profile Update</h1>
+                            <h1 className="text-4xl font-bold font-raleway text-secondaryColor">Profile Update</h1>
                         </div>
 
-                        <div className="grid grid-cols-2 w-full gap-10 mt-5">
-                            <div className="flex flex-col justify-center order-2">
+                        {/* profile info */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 w-full lg:gap-10 mt-5">
+                            <div className="w-full flex flex-col lg:justify-center items-center lg:items-end mb-6 lg:mb-0">
                                 <h2 className="text-4xl font-semibold mb-2">Current User</h2>
-                                <h2 className="text-4xl text-secondaryColor font-black font-playfairDisplay mb-3">{user.displayName}</h2>
+                                <h2 className="text-4xl text-secondaryColor font-black font-raleway mb-3">{user.displayName}</h2>
 
                                 <h4 className="text-2xl font-medium text-secondaryColor mb-3">Email: {user.email}</h4>
-                                <h4 className="text-lg text-secondaryColor mb-8">Photo Url: {user.photoURL}</h4>
-                                <p className="font-medium text-lg">Fill the form to update your profile name and image</p>
+                                <p className="font-medium text-lg text-center">Fill the form to update your profile name and image</p>
                                 <p><span className="text-red-600 text-xl">*</span> means required </p>
                             </div>
 
@@ -83,9 +83,9 @@ const UpdateProfile = () => {
                                         </div>
                                         <div className="form-control">
                                             <label className="label">
-                                                <span className="label-text text-base font-medium text-secondaryColor">Photo Url</span>
+                                                <span className="label-text text-base font-medium text-secondaryColor">Photo Url<span className="text-red-600">*</span></span>
                                             </label>
-                                            <input name="photoUrl" type="text" placeholder="Give your photo url here" className="input input-bordered" />
+                                            <input name="photoUrl" type="text" placeholder="Give your photo url here" className="input input-bordered" required />
                                         </div>
                                         <div className="form-control">
                                             <label className="label">

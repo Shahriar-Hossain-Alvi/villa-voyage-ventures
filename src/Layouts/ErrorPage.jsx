@@ -10,7 +10,7 @@ const ErrorPage = () => {
                 <title>Error Page | Villa Voyage Ventures</title>
             </Helmet>
 
-            <h2 className="text-9xl font-black font-playfairDisplay text-red-600">404</h2>
+            <h2 className="text-9xl font-black font-raleway text-red-600">404</h2>
             
             <img src={errorImage} alt="" />
 

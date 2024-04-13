@@ -81,7 +81,7 @@ const Register = () => {
                 <div className="lg:flex md:flex md:items-center md:justify-start lg:items-center lg:justify-start lg:order-2">
                     {/* heading */}
                     <div className="animate__animated animate__backInRight lg:text-left mt-10 lg:mt-0 px-4 lg:px-0">
-                        <h1 className="text-5xl font-bold font-playfairDisplay text-secondaryColor text-center lg:text-left">Register now!</h1>
+                        <h1 className="text-5xl font-bold font-raleway text-secondaryColor text-center lg:text-left">Register now!</h1>
                         <p className="py-6 text-center lg:text-left text-secondaryColor font-medium text-lg">Create an account to save and manage your properties freely</p>
 
                         <hr />

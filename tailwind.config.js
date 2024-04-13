@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        playfairDisplay: ['Playfair Display', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
         dosis: ['Dosis', 'serif'],
       },
       colors: {

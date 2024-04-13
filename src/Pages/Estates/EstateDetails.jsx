@@ -28,7 +28,7 @@ const EstateDetails = () => {
             <Navbar></Navbar>
 
             <div className="mt-8">
-                <h3 className="text-3xl md:text-5xl lg:text-5xl text-center font-bold font-playfairDisplay">{estate_title}</h3>
+                <h3 className="text-3xl md:text-5xl lg:text-5xl text-center font-bold font-raleway">{estate_title}</h3>
 
                 {/* images */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">

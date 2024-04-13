@@ -13,20 +13,20 @@ const Footer = () => {
                     <p>Providing reliable service since 1992</p>
                 </nav>
                 <nav>
-                    <h6 className="footer-title font-playfairDisplay font-extrabold">Company</h6>
+                    <h6 className="footer-title font-raleway font-extrabold">Company</h6>
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Neighbourhoods</a>
                     <a className="link link-hover">Floor plan</a>
                 </nav>
                 <nav>
-                    <h6 className="footer-title font-playfairDisplay font-extrabold">Legal</h6>
+                    <h6 className="footer-title font-raleway font-extrabold">Legal</h6>
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
                 <form>
-                    <h6 className="footer-title font-playfairDisplay font-extrabold">Newsletter</h6>
+                    <h6 className="footer-title font-raleway font-extrabold">Newsletter</h6>
                     <fieldset className="form-control w-80">
                         <label className="label">
                             <span className="label-text text-white">Enter your email address</span>
