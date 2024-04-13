@@ -1,4 +1,4 @@
-# Villa Voyage Ventures: 
+# Villa Voyage Ventures
 Welcome to Villa Voyage Ventures, your premier destination for luxury resort experiences. Our website is designed to provide you with a seamless and immersive journey into the world of exquisite hospitality.
 
 
