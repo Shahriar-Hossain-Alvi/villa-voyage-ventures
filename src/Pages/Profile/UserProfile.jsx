@@ -19,14 +19,14 @@ const UserProfile = () => {
 
             <Navbar></Navbar>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-10 items-center gap-3 md:gap-4 lg:gap-6">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 mt-10 gap-3 md:gap-4 lg:gap-6 px-2 lg:px-0">
                 {/* user image */}
-                <div className="rounded-xl border p-3">
-                    <img className="rounded-xl w-full" src={user.photoURL} alt="" />
+                <div className="place-self-center rounded-full w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 border-2 flex justify-center items-center p-3">
+                    <img className="rounded-full w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80" src={user.photoURL} alt="" />
                 </div>
 
                 {/* user info */}
-                <div className="col-span-2 border">
+                <div className="lg:col-span-2 border">
                     <div className="overflow-x-auto">
                         <div className="overflow-x-auto">
                             <table className="table table-zebra">

@@ -2,20 +2,6 @@
 Welcome to Villa Voyage Ventures, your premier destination for luxury resort experiences. Our website is designed to provide you with a seamless and immersive journey into the world of exquisite hospitality.
 
 
-## Npm Packages Used in this projects
-- **React Router**
-- **Tailwind CSS**
-- **Daisy Ui**
-- **React Toastify**
-- **Swiper Slider** 
-- **Animate CSS**
-- **React Leaflet**
-- **React Icons**
-- **PropTypes**
-- **React async helmet**
-- **Firebase**
-
-
 ## Features
 
 - **Navigation:** Navigate Easily from page to page with the help of react router
@@ -40,3 +26,17 @@ Ready to embark on your next adventure? Visit our website to discover our latest
 **Firebase:**
 **Surge:**
 **Netlify:**
+
+
+## Npm Packages Used in this projects
+- **React Router**
+- **Tailwind CSS**
+- **Daisy Ui**
+- **React Toastify**
+- **Swiper Slider** 
+- **Animate CSS**
+- **AOS Package**
+- **React Icons**
+- **PropTypes**
+- **React async helmet**
+- **Firebase**

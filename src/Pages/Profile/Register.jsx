@@ -77,7 +77,7 @@ const Register = () => {
 
             <ToastContainer></ToastContainer>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 container mx-auto">
                 <div className="lg:flex md:flex md:items-center md:justify-start lg:items-center lg:justify-start lg:order-2">
                     {/* heading */}
                     <div className="animate__animated animate__backInRight lg:text-left mt-10 lg:mt-0 px-4 lg:px-0">

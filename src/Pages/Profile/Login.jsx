@@ -109,7 +109,7 @@ const Login = () => {
 
             <div>
                 <ToastContainer />
-                <div className="hero w-full mx-auto">
+                <div className="hero w-full container mx-auto">
                     <div className="hero-content flex-col w-full">
                         {/* log in text */}
                         <div className="text-center animate__animated animate__zoomIn">

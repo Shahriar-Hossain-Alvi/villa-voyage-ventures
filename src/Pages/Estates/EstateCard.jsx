@@ -3,14 +3,20 @@ import { MdCompareArrows } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 const EstateCard = ({ estate }) => {
+    useEffect(() => {
+        Aos.init();
+    }, [])
 
     const { id, image_link, segment_name, estate_title, location, short_description, status } = estate;
 
     return (
-        <div className="border border-base-300 lg:shadow-xl p-4 lg:rounded-2xl">
+        <div data-aos="fade-up" className="border border-base-300 lg:shadow-xl p-4 lg:rounded-2xl">
             {/* image */}
             <div className="relative">
                 <span className="bg-primaryColor text-white px-4 absolute -top-7 -left-3">Featured</span>

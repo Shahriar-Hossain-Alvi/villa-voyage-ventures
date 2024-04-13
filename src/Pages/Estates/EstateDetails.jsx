@@ -27,7 +27,7 @@ const EstateDetails = () => {
 
             <Navbar></Navbar>
 
-            <div className="mt-8">
+            <div className="mt-8 container mx-auto px-2 lg:px-0">
                 <h3 className="text-3xl md:text-5xl lg:text-5xl text-center font-bold font-raleway">{estate_title}</h3>
 
                 {/* images */}

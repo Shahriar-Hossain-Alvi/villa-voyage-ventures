@@ -55,7 +55,7 @@ const UpdateProfile = () => {
 
             <div>
                 <ToastContainer />
-                <div className="hero w-full mx-auto">
+                <div className="hero w-full mx-auto container">
                     <div className="hero-content flex-col w-full">
                         <div className="text-center">
                             <h1 className="text-4xl font-bold font-raleway text-secondaryColor">Profile Update</h1>
