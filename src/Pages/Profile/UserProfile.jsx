@@ -19,7 +19,7 @@ const UserProfile = () => {
 
             <Navbar></Navbar>
 
-            <div className="grid grid-cols-3 mt-10 items-center gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-10 items-center gap-3 md:gap-4 lg:gap-6">
                 {/* user image */}
                 <div className="rounded-xl border p-3">
                     <img className="rounded-xl w-full" src={user.photoURL} alt="" />
