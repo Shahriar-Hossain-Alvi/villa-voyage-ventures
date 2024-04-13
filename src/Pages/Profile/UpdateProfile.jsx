@@ -66,12 +66,13 @@ const UpdateProfile = () => {
                             <div className="w-full flex flex-col lg:justify-center items-center lg:items-end mb-6 lg:mb-0">
                                 <h2 className="text-4xl font-semibold mb-2">Current User</h2>
                                 <h2 className="text-4xl text-secondaryColor font-black font-raleway mb-3">{user.displayName}</h2>
-
+                                <p className="font-medium text-center lg:text-right mb-3">Photo url: {user.photoURL}</p>
                                 <h4 className="text-2xl font-medium text-secondaryColor mb-3">Email: {user.email}</h4>
                                 <p className="font-medium text-lg text-center">Fill the form to update your profile name and image</p>
                                 <p><span className="text-red-600 text-xl">*</span> means required </p>
                             </div>
 
+                            {/* update form */}
                             <div className="w-full shadow-secondaryColor shadow-2xl">
                                 <div className="card shrink-0 w-full">
                                     <form onSubmit={handleUpdateProfileButton} className="card-body">

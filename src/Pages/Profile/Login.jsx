@@ -120,7 +120,7 @@ const Login = () => {
                         {/* log in options */}
                         <div className="grid lg:grid-cols-12 w-full lg:gap-6">
                             {/* social log in */}
-                            <div className="lg:col-span-5 flex flex-col justify-center  items-center lg:items-end animate__animated animate__backInLeft mb-10 lg:mb-0">
+                            <div className="lg:col-span-5 flex flex-col justify-center  items-center lg:items-start animate__animated animate__backInRight mb-10 lg:mb-0 lg:order-3">
                                 <h2 className="text-xl font-semibold mb-4">Login using your social accounts</h2>
                                 <div className="flex gap-8 mb-8">
                                     <div>
@@ -139,10 +139,10 @@ const Login = () => {
                             </div>
 
                             {/* Or */}
-                            <div className="divider lg:divider-horizontal text-xl">OR</div>
+                            <div className="divider lg:divider-horizontal text-xl lg:order-2">OR</div>
 
                             {/* email-password sign in */}
-                            <div className="lg:col-span-6 card shrink-0 w-full shadow-2xl animate__animated animate__backInRight">
+                            <div className="lg:col-span-6 card shrink-0 w-full shadow-2xl animate__animated animate__backInLeft lg:order-1">
                                 <form onSubmit={handleLogin} className="card-body =">
                                     <div className="form-control">
                                         <label className="label">

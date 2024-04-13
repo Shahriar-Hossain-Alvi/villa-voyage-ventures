@@ -34,7 +34,7 @@ const Favorites = () => {
 
             <Navbar></Navbar>
 
-            <div className="container mx-auto my-10">
+            <div className="container space-y-4 mx-auto my-10">
                 {
                     showFavoriteEstates.length <= 0 ?
                         <>
